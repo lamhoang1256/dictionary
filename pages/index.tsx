@@ -1,8 +1,15 @@
 import { LayoutHome } from "layouts";
-import type { NextPage } from "next";
 import Head from "next/head";
+import { wordsApi } from "server/word";
+import { IWord } from "types";
+import { uuid } from "uuidv4";
 
-const Home: NextPage = () => {
+interface HomePageProps {
+  words: IWord[];
+}
+
+const HomePage = ({ words }: HomePageProps) => {
+  console.log("words: ", words);
   return (
     <>
       <Head>
@@ -15,4 +22,14 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export async function getStaticProps() {
+  await wordsApi.deleteWord("83e9c2e6-b6ad-465d-9443-0f609ba35886");
+  const words = await wordsApi.getAll();
+  return {
+    props: {
+      words,
+    },
+  };
+}
+
+export default HomePage;
