@@ -1,30 +1,5 @@
 [
     {
-        "id": "60d66ebc12a1df001557785c",
-        "level": "B2",
-        "examples": [
-            "Seats will be assigned on a first-cone, first-served basis."
-        ],
-        "picture": "https://res.cloudinary.com/dynonary/image/upload/v1624665788/dynonary/words/fxwivvkyutd1joedpxrq.png",
-        "specialty": "0",
-        "topics": [
-            "20",
-            "1",
-            "11"
-        ],
-        "synonyms": [
-            "appoint"
-        ],
-        "antonyms": [],
-        "isChecked": false,
-        "word": "assign",
-        "type": "v",
-        "note": "",
-        "mean": "chỉ định",
-        "phonetic": "əˈsaɪn",
-        "isLocked": 0
-    },
-    {
         "id": "60de4d0879629f0015c3fe09",
         "level": "B2",
         "examples": [],
